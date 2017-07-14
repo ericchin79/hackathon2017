@@ -1,3 +1,95 @@
-<html>
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Hackathon 2017 Project Code Name "Cattle Prod"</title>
+	<meta name="description" content="This page was created to show stuff">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	
+
+</head>
+
+<body>
+
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>A-Line</h1>
+				<h3><b>The Mission:</b>To Create an application that visually forcasts/connects work with people who are interested and skilled in executing the work<br><br>
+				<b>For Who:</b> SDS, I&O, BSA, Business Areas
+				</h3>
+			</div> 
+		</div> 
+	</header>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3" ng-app="demo">
+					<div class="well">
+						<div ng-controller="Hello">
+							<u><b>AngularJS Web Service Call</b></u>
+							<p><b>The ID is:</b> {{greeting.id}}</p>
+							<p><b>The content is:</b> {{greeting.content}}</p>
+							<a href="https://spring.io/guides/gs/consuming-rest-angularjs/">Example Found Here</a>
+							<br><a href="http://www.nganimate.org/">NG Animate</a>
+							<br><a href="https://angular-ui.github.io/bootstrap/">AngularJS UI</a>
+						</div>					
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="well">
+						<b>Bootstrap Resources</b>
+						<br>
+						<a href="https://startbootstrap.com/">Bootstrap Homepage</a>
+						<br>
+						<a href="https://startangular.com/product/sb-admin-bootstrap-4-angular-4/">Fancy Template</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="well">
+						<b>HTML5 Storage</b>
+						<br>
+						<a href="https://www.ibm.com/developerworks/community/blogs/bobleah/entry/html5_code_example_store_images_using_localstorage57?lang=en">Image Storage Example</a>
+						<br>
+						<a href="https://www.html5rocks.com/en/tutorials/offline/storage/">In Browser DB's</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="well">
+						Connect - Simplify - Collaborate
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+	<footer>
+		<div class="container">
+			<hr>
+			<p><small><a href="http://www.throughthered.com">Like my band</a> On facebook</small></p>				
+			</p>
+		</div> <!-- end container -->
+	</footer>
+		
+	<!-- Latest compiled and minified JavaScript
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script>
+		angular.module('demo', [])
+		.controller('Hello', function($scope, $http) {
+		    $http.get('http://rest-service.guides.spring.io/greeting').
+		        then(function(response) {
+		            $scope.greeting = response.data;
+		        });
+		});
+    </script>
+</body>	
 </html>
