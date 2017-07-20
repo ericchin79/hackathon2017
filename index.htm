@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body ng-app="aline">
 
 	<header>
 		<div class="jumbotron">
@@ -23,7 +23,7 @@
 				<b>For Who:</b> SDS, I&O, BSA, Business Areas
 				</h3>
 			</div> 
-		</div> 
+		</div>
 	</header>
 
 	
@@ -41,9 +41,9 @@
 	
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3" ng-app="demo">
+				<div class="col-lg-3">
 					<div class="well">
-						<div ng-controller="Hello">
+						<div ng-controller="springCtrl">
 							<u><b>AngularJS Web Service Call</b></u>
 							<p><b>The ID is:</b> {{greeting.id}}</p>
 							<p><b>The content is:</b> {{greeting.content}}</p>
@@ -72,10 +72,10 @@
 					</div>
 				</div>
 				<div class="col-lg-3">
-					<div class="well font-white">
-						Connect - Simplify - Collaborate
-						<br>
-						<input type="button" onclick="popup()" value="Click Me!">
+					<div class ="well" ng-controller="groceryCtrl">
+						<ul>
+							<li ng-repeat="x in products">{{x}}</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -113,18 +113,11 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	-->
 	
-<script src="javascript/hackathon.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
-<script>
-//angular.module('demo', [])
-//.controller('Hello', function($scope, $http) {
-//    $http.get('http://rest-service.guides.spring.io/greeting').
-//        then(function(response) {
-//            $scope.greeting = response.data;
-//        });
-//});
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="javascript/hackathon.js"></script>
+
+<script></script>
 
 
 
