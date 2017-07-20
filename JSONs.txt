@@ -1,0 +1,92 @@
+// Resource URI Params
+
+// Resource JSON response
+##missing Owner/PPL
+##missing BIO
+{
+	resourceId: int
+	teamId: int
+	teamName: string
+	positionId: int
+	jobId: int
+	jobName: string
+	name: string first+last
+	emailAddress: email
+	endDate: string (mm/dd/yyyy)
+	
+	skills [] {
+		skillId: int
+		name: string
+		skillLevel: int 1-5
+		intrest level: int 1-5
+		}
+	projects []
+{
+        projectId: int
+	ownerId: int
+	ownerName: string
+	projectName: string
+	status: int
+}
+
+}
+
+
+
+// Team JSON
+##missing history of Health
+{
+	teamId: int
+	teamName: string
+	
+	owners [] {
+		ownerId: int
+		name: string first+last
+		emailAddress: string
+		type: string
+		}
+	
+	projects [] {
+		projectId: int
+		ownerId: int
+		ownerName: string first+last
+		name: string
+		status: string
+		}
+	
+	resources [] {
+		resourceId: int
+		resourceName: string first+last
+		positionId: int
+		jobName: string
+		emailAddress: email
+		endDate: string (mm/dd/yyyy)
+		}
+	
+	engagementRating: [] array
+}
+
+// Position JSON
+position[]
+ {
+	positionId: int
+	skillId: int
+	skillName: string
+	jobId: int
+	jobName: string
+	resourceId: int
+	resourceName: string
+	teamId: int
+	teamName: string
+	filled: boolean
+	startDate: string (mm/dd/yyyy)
+	endDate: string (mm/dd/yyyy)
+}
+
+// Owner JSON
+	{
+ownerId: int
+name: string first+last
+type: string
+emailAddress: email
+}
