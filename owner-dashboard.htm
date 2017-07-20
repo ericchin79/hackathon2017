@@ -1,137 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>Aline - Owner Dashboard</title>
-	<meta name="description" content="This page was created to show stuff">
+<meta charset="utf-8">
+<title>Aline - Owner Dashboard</title>
+<meta name="description" content="This page was created to show stuff">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<link href="css/hackathon.css" rel="stylesheet"/>
-
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="css/hackathon.css" rel="stylesheet"/>
 </head>
 
 <body>
-
-	<header>
-		<div class="jumbotron">
-			<div class="container">
-				<h1>A-Line</h1>
-				<h3><b>The Mission:</b>To Create an application that visually forcasts/connects work with people who are interested and skilled in executing the work<br><br>
-				<b>For Who:</b> SDS, I&O, BSA, Business Areas
-				</h3>
-			</div> 
-		</div> 
-	</header>
-
-	
-
-
-
-
-
-
-
-
-
-
-
-	
-		<div class="container">
-
-			<div class="row">
-				<div class="col-lg-3" ng-app="demo">
-					<div class="well">
-						<div ng-controller="Hello">
-							<u><b>AngularJS Web Service Call</b></u>
-							<p><b>The ID is:</b> {{greeting.id}}</p>
-							<p><b>The content is:</b> {{greeting.content}}</p>
-							<a href="https://spring.io/guides/gs/consuming-rest-angularjs/">Example Found Here</a>
-							<br><a href="http://www.nganimate.org/">NG Animate</a>
-							<br><a href="https://angular-ui.github.io/bootstrap/">AngularJS UI</a>
-						</div>					
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="well">
-						<b>Bootstrap Resources</b>
-						<br>
-						<a href="https://startbootstrap.com/">Bootstrap Homepage</a>
-						<br>
-						<a href="https://startangular.com/product/sb-admin-bootstrap-4-angular-4/">Fancy Template</a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="well font-white">
-						Connect - Simplify - Collaborate
-						<br>
-						<input type="button" onclick="popup()" value="Click Me!">
-					</div>
-				</div>
-
-				<div class="col-lg-3 sidebar-offcanvas" id="sidebar">
-				<div class="list-group">
-					<a href="#" class="list-group-item active">Team 1 Name</a>
-					<a href="#" class="list-group-item">Team 2 Name</a>
-					<a href="#" class="list-group-item">Team 3 Name</a>
-					<a href="#" class="list-group-item">Team 4 Name</a>
-					<a href="#" class="list-group-item">Team 1 Name</a>
-					<a href="#" class="list-group-item">Team 1 Name</a>
-					<a href="#" class="list-group-item">Team 1 Name</a>
-					<a href="#" class="list-group-item">Team 1 Name</a>
-					<a href="#" class="list-group-item">Team 1 Name</a>
-					<a href="#" class="list-group-item">Team 1 Name</a>
-				</div>
-				</div><!--/span-->
-			</div><!--/row-->
-
-			</div>
-
-
-
-
-		</div><!--ends container-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-
-	<footer class="black white">
-		<div class="container" >
-			<hr>
-			<p><small><a href="http://www.throughthered.com">Like my band</a> On facebook</small></p>				
-			</p>
-		</div> <!-- end container -->
-	</footer>
-
-	<!-- Latest compiled and minified JavaScript We may not need this.... 
-		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	-->
-	
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-<script src="javascript/hackathon.js"></script>
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					 aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#"> <img alt="Brand" height="60px" src="file:pictures/AlineLogoShadow.png"> </a> </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-left">
+          <div class="form-group"> </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Teams <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Mantis</a></li>
+              <li><a href="#">Mitosis</a></li>
+              <li><a href="#">Night's Watch</a></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Resources <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">John Smith</a></li>
+              <li><a href="#">Eric Smith</a></li>
+              <li><a href="#">Toby Smith</a></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container">
+<div class="row">
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="col-lg-4" align="center"> <a href="#"> <img class="media-object" src="file:pictures/JobSearch.png" alt="UserPhoto"> </a> </div>
+        <div class="col-lg-4" align="center"> <a href="#"> <img class="media-object" src="file:pictures/ResourceSearch.png" alt="UserPhoto"> </a> </div>
+        <div class="col-lg-4" align="center"> <a href="#"> <img class="media-object" src="file:pictures/TeamSearch.png" alt="UserPhoto"> </a> </div>
+        <div class="col-lg-12">
+          <h1>The grid goes here!</h1>
+        </div>
+      </div>
+      <div class="col-lg-3 sidebar-offcanvas" id="sidebar">
+        <div class="list-group"> <a href="#" class="list-group-item active">Team 1 Name</a> <a href="#" class="list-group-item">Team 2 Name</a> <a href="#" class="list-group-item">Team 3 Name</a> <a href="#" class="list-group-item">Team 4 Name</a> <a href="#" class="list-group-item">Team 1 Name</a> <a href="#" class="list-group-item">Team 1 Name</a> <a href="#" class="list-group-item">Team 1 Name</a> <a href="#" class="list-group-item">Team 1 Name</a> <a href="#" class="list-group-item">Team 1 Name</a> <a href="#" class="list-group-item">Team 1 Name</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="black white">
+  <div class="container" >
+    <hr>
+    <p><small><a href="http://www.throughthered.com">Like my band</a> On facebook</small></p>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> 
+<script src="javascript/hackathon.js"></script> 
 <script></script>
-
-
-
-</body>	
+</body>
 </html>
