@@ -37,7 +37,7 @@ hackApp.controller("dataTableCtrl", function($scope) {
         $scope.message = 'clicked: '+ info.price;
     };
 
-    $scope.columnDefs = columnDefs;
+    $scope.columnDefs = resourceColumnDefs;
     $scope.overrideOptions = {
         "bStateSave": true,
         "iCookieDuration": 2419200, /* 1 month */
@@ -48,7 +48,7 @@ hackApp.controller("dataTableCtrl", function($scope) {
         "bInfo": true,
         "bDestroy": true
     };
-    $scope.sampleProductCategories = sampleProductCategories;
+    $scope.sampleResources = sampleResources;
 
 });
 
@@ -273,4 +273,35 @@ let columnDefs = [
             { "mDataProp": "category", "aTargets":[0]},
             { "mDataProp": "name", "aTargets":[1] },
             { "mDataProp": "price", "aTargets":[2] }
-        ]; 
+        ];
+let sampleResources = [
+    {
+    "Name": "Eric Chin",
+    "Skill Name": "AngularJS",
+    "Skill Level": 3,
+    "Interest Name":"JAVA EE",
+    "Interest Level":5
+    },
+    {
+    "Name": "Tyler Sams",
+    "Skill Name": "Test Automation",
+    "Skill Level": 5,
+    "Interest Name": "JAVA",
+    "Interest Level":2
+    },
+    {
+    "Name": "Jordan McMillan",
+    "Skill Name": "Guide Wire",
+    "Skill Level": 5,
+    "Interest Name": "AngularJS",
+    "Interest Level":2
+    }
+];
+
+let resourceColumnDefs = [
+    { "mDataProp": "Name", "aTargets":[0]},
+    { "mDataProp": "Skill Name", "aTargets":[1] },
+    { "mDataProp": "Skill Level", "aTargets":[2] },
+    { "mDataProp": "Interest Name", "aTargets":[3] },
+    { "mDataProp": "Interest Level", "aTargets":[4] }
+];
