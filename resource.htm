@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Hackathon 2017 Project Code Name "Cattle Prod"</title>
+	<title>Aline - Resource Page</title>
 	<meta name="description" content="This page was created to show stuff">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
 
 </head>
 
-<body ng-app="aline">
+<body ng-app="aline" ng-controller="resourceCtrl">
 
 	<header>
 		<aline-header></aline-header>
@@ -30,7 +30,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-6">
-				<h1><b>Tyler Sams</b></h1>
+			  <h1><strong>{{name}}</strong></h1>
 			</div>
 			<div class="col-xs-6">
 				
@@ -78,8 +78,8 @@
 				<div class="media">
 					<div class="media-left"> <a href="#"> <img class="media-object img-circle" height="115px" width="115px" src="pictures/XboxAvatar.png" alt="UserPhoto"> </a>						</div>
 					<div class="media-body">
-						<h2 class="media-heading">Senior Test Automation Developer</h2>
-						<h4><span class="label label-default">Manager: Gregory Feldman-Hill</span></h4>
+					  <h2 class="media-heading">{{jobName}}</h2>
+					  <h4><span class="label label-default">Manager: Gregory Feldman-Hill</span></h4>
 						Tyler started at Nationwide back in 2010. He has moved throughout the company, becoming a Test Automation Developer in 2016.
 						</div>
 				</div>
@@ -90,12 +90,12 @@
 						<h4><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> : 614-489-1111&nbsp;</h4>
 					</div>
 					<div class="col-lg-6">
-						<h4><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> : <a>samst2@gmail.com</a>&nbsp;</h4>
+					  <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> : <a href=mailto:{{email}}>{{email}}</a></p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-6">
-						<h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> : Columbus, OH&nbsp;</h4>
+						<h4><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> : {{team}} </h4>
 					</div>
 					<div class="col-lg-6">
 						<h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> : Unspecified </h4>

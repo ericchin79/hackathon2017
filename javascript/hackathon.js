@@ -30,6 +30,17 @@ hackApp.controller("ownerDashboardCtrl", function($scope) {
     $scope.owner = mockOwner;
 });
 
+hackApp.controller("resourceCtrl", function($scope,$http) {
+     $http.get('http://nwaline.azurewebsites.net/api/resources/getByID?id=7').
+         then(function(response) {
+             $scope.resource = response.data;
+             $scope.name = response.data.Name;
+		 $scope.team = response.data.TeamName;
+		 $scope.email = response.data.EmailAddress;
+		 $scope.jobName = response.data.JobName;
+         });
+});
+
 hackApp.controller("dataTableCtrl", function($scope) {
     $scope.message = '';            
     
