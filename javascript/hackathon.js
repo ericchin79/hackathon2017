@@ -17,9 +17,7 @@ hackApp.controller("ownerDashboard", function($scope) {
 });
 
 hackApp.component('alineHeader', {
-  templateUrl: '../headerTemplate.html'
-  
-
+  templateUrl: '../headerTemplate.htm'
 });
 
 hackApp.controller('alineHeaderCtrl', function($scope, $http){
