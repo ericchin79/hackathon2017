@@ -312,14 +312,14 @@ let columnDefs = [
         ];
 let sampleResources = [
     {
-    "Name": "Eric Chin",
+    "Name": '<a href="resource.htm">Eric Chin</a>',
     "Skill Name": "AngularJS",
     "Skill Level": 3,
     "Interest Name":"JAVA EE",
     "Interest Level":5
     },
     {
-    "Name": "Tyler Sams",
+    "Name": '<a href="resource7.htm">Tyler Sams</a>',
     "Skill Name": "Test Automation",
     "Skill Level": 5,
     "Interest Name": "JAVA",
