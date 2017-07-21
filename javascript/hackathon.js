@@ -49,7 +49,7 @@ hackApp.controller("teamCtrl", function($scope,$http) {
 		 	$scope.engagementHistory = response.data.EngagementHistory;
 			$scope.owners = response.data.Owners;
 			$scope.workload = response.Workload;
-			$scope.teamName = response.data.TeamName;
+			$scope.teamName = "Mantis";
 			         });
 });
 
