@@ -32,17 +32,17 @@ body {
 }
 
 .panel-gray {
-    border-color: #686868;
+    border-color: #d7d7d7;
 }
 
 .panel-gray > .panel-heading {
-    border-color: ##686868;
-    color: #fff;
-    background-color: #686868;
+    border-color: ##d7d7d7;
+    color: #000;
+    background-color: #d7d7d7;
 }
 
 .panel-gray > a {
-    color: #686868;
+    color: #d7d7d7;
 }
 
 .panel-gray > a:hover {
