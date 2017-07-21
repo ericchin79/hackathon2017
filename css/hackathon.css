@@ -1,9 +1,16 @@
-    .gray1{ background-color: #ccc; }
-    .black{ background-color: #000; }
-    .white{ background-color: white; }
-    .tempest-gold{ background-color: #DDC443; }
-    .tempest-black{ background-color:black; }
-    .font-white{ color: white; }
+#topbar {
+    background-image: url(../pictures/20170719_194819.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+.gray1{ background-color: #ccc; }
+.black{ background-color: #000; }
+.white{ background-color: white; }
+.font-white{ color: white; }
 
 .media-left,
 .media > .pull-left {
@@ -14,6 +21,10 @@
 .media-body {
   display: table-cell;
   vertical-align: top;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
 }
 
 .navbar-fixed-top {
