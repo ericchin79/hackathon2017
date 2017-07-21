@@ -12,28 +12,24 @@
 	<link href="css/hackathon.css" rel="stylesheet"/>
 
 <style>
-.ng-invalid { border: 1px solid red; } 
-body { font-family: Arial,Helvetica,sans-serif; }
-body, td, th { font-size: 14px; margin: 0; }
-table { border-collapse: separate; border-spacing: 2px; display: table; margin-bottom: 0; margin-top: 0; -moz-box-sizing: border-box; text-indent: 0; }
-a:link, a:visited, a:hover { color: #5D6DB6; text-decoration: none; }
-.error { color: red; }
-.ui-helper-hidden { display: none;}
+
 </style>	
 
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- DataTables -->
+	<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.8.2/jquery.dataTables.min.js"></script>	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script src="javascript/hackathon.js"></script>
 
 <!--	
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script src="http://code.angularjs.org/angular-1.0.0rc1.js"></script>	
 -->
 
-<!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.8.2/jquery.dataTables.min.js"></script>
-<script src="http://code.angularjs.org/angular-1.0.0rc1.js"></script>	
+
+
 
 </head>
 
@@ -56,33 +52,22 @@ a:link, a:visited, a:hover { color: #5D6DB6; text-decoration: none; }
 
 
 	
-		<div class="container">
+	<div class="container">
 
-    <div ng-controller="Ctrl">
-        <table my-table="overrideOptions"
-               aa-data="sampleProductCategories"
-               ao-column-defs="columnDefs"
-               fn-row-callback="myCallback">
-            <thead>
-            <tr>
-                <th style="width:150px">Category</th>
-                <th style="width:250px">Name</th>
-                <th style="width:100px">Price</th>
-            </tr>
-            </thead>
-        </table>
-       {{message}}
-    </div>
+	<div ng-controller="dataTableCtrl" class="well">
+		<table my-table="overrideOptions" aa-data="sampleProductCategories" ao-column-defs="columnDefs" fn-row-callback="myCallback" class="table">
+			<thead>
+			<tr>
+				<th class = "th"  style="width:150px">Category</th>
+				<th  class = "th" style="width:250px">Name</th>
+				<th  class = "th" style="width:100px">Price</th>
+			</tr>
+			</thead>
+		</table>
+		{{message}}
+	</div>
 
-		</div>
-
-
-
-
-
-
-
-
+	</div>
 
 
 
