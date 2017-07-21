@@ -11,7 +11,12 @@ hackApp.controller("groceryCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
 });
 
-hackApp.controller("ownerDashboard", function($scope) {
+hackApp.controller("ownerDashboardCtrl", function($scope) {
+    // $http.get('http://rest-service.guides.spring.io/greeting').
+    //     then(function(response) {
+    //         $scope.teamsByOwner = response.data;
+    //         $scope.owner = response.data;
+    //     });
     $scope.teamsByOwner = teamsByOwner;
     $scope.owner = mockOwner;
 });
