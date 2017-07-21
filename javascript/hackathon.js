@@ -41,6 +41,72 @@ hackApp.controller("resourceCtrl", function($scope,$http) {
          });
 });
 
+hackApp.controller("resourceCtrl7", function($scope,$http) {
+     $http.get('http://nwaline.azurewebsites.net/api/resources/getByID?id=7').
+         then(function(response) {
+             $scope.resource = response.data;
+             $scope.name = response.data.Name;
+		 $scope.team = response.data.TeamName;
+		 $scope.email = response.data.EmailAddress;
+		 $scope.jobName = response.data.JobName;
+         });
+});
+
+hackApp.controller("resourceCtrl6", function($scope,$http) {
+     $http.get('http://nwaline.azurewebsites.net/api/resources/getByID?id=6').
+         then(function(response) {
+             $scope.resource = response.data;
+             $scope.name = response.data.Name;
+		 $scope.team = response.data.TeamName;
+		 $scope.email = response.data.EmailAddress;
+		 $scope.jobName = response.data.JobName;
+         });
+});
+
+hackApp.controller("resourceCtrl10", function($scope,$http) {
+     $http.get('http://nwaline.azurewebsites.net/api/resources/getByID?id=10').
+         then(function(response) {
+             $scope.resource = response.data;
+             $scope.name = response.data.Name;
+		 $scope.team = response.data.TeamName;
+		 $scope.email = response.data.EmailAddress;
+		 $scope.jobName = response.data.JobName;
+         });
+});
+
+hackApp.controller("resourceCtrl11", function($scope,$http) {
+     $http.get('http://nwaline.azurewebsites.net/api/resources/getByID?id=11').
+         then(function(response) {
+         $scope.resource = response.data;
+         $scope.name = response.data.Name;
+		 $scope.team = response.data.TeamName;
+		 $scope.email = response.data.EmailAddress;
+		 $scope.jobName = response.data.JobName;
+         });
+});
+
+hackApp.controller("resourceCtrl14", function($scope,$http) {
+     $http.get('http://nwaline.azurewebsites.net/api/resources/getByID?id=14').
+         then(function(response) {
+         $scope.resource = response.data;
+         $scope.name = response.data.Name;
+		 $scope.team = response.data.TeamName;
+		 $scope.email = response.data.EmailAddress;
+		 $scope.jobName = response.data.JobName;
+         });
+});
+
+hackApp.controller("resourceCtrl15", function($scope,$http) {
+     $http.get('http://nwaline.azurewebsites.net/api/resources/getByID?id=15').
+         then(function(response) {
+         $scope.resource = response.data;
+         $scope.name = response.data.Name;
+		 $scope.team = response.data.TeamName;
+		 $scope.email = response.data.EmailAddress;
+		 $scope.jobName = response.data.JobName;
+         });
+});
+
 hackApp.controller("dataTableCtrl", function($scope) {
     $scope.message = '';            
     
@@ -312,7 +378,7 @@ let columnDefs = [
         ];
 let sampleResources = [
     {
-    "Name": '<a href="resource.htm">Eric Chin</a>',
+    "Name": '<a href="resource11.htm">Eric Chin</a>',
     "Skill Name": "AngularJS",
     "Skill Level": 3,
     "Interest Name":"JAVA EE",
@@ -326,46 +392,32 @@ let sampleResources = [
     "Interest Level":2
     },
     {
-    "Name": "Jordan McMillan",
+    "Name": '<a href="resource14.htm">Jordan McMillan</a>',
     "Skill Name": "Guidewire",
     "Skill Level": 5,
     "Interest Name": "AngularJS",
     "Interest Level":3
     },
     {
-    "Name": "Billy Bob",
+    "Name": '<a href="resource15.htm">Dan Baker</a>',
     "Skill Name": "AngularJS",
     "Skill Level": 5,
     "Interest Name": "Guidewire",
     "Interest Level":5
     },
     {
-    "Name": "Jillian Bendt",
+    "Name": '<a href="resource10.htm">Jillian Bendt</a>',
     "Skill Name": ".net",
     "Skill Level": 5,
     "Interest Name": ".net",
     "Interest Level":5
     },
     {
-    "Name": "Ryan Carroll",
+    "Name": '<a href="resource6.htm">Ryan Carroll</a>',
     "Skill Name": "ETL",
     "Skill Level": 5,
     "Interest Name": "ETL",
     "Interest Level":5
-    },
-    {
-    "Name": "Jimmy Boi",
-    "Skill Name": "Angular",
-    "Skill Level": 5,
-    "Interest Name": "Guidewire",
-    "Interest Level":3
-    },
-    {
-    "Name": "Rosie O'onnell",
-    "Skill Name": "Wizardry",
-    "Skill Level": 5,
-    "Interest Name": "Guidewire",
-    "Interest Level":3
     }
 ];
 
