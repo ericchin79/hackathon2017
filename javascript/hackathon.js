@@ -11,6 +11,10 @@ hackApp.controller("groceryCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
 });
 
+hackApp.component('alineHeader', {
+  templateUrl: '../header.htm'
+});
+
 function popup() {
     alert("Hello World");
 }
