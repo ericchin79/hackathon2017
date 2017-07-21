@@ -1,112 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>Hackathon 2017 Project Code Name "Cattle Prod"</title>
-	<meta name="description" content="This page was created to show stuff">
+<meta charset="utf-8">
+<title>Aline - Resource Dashboard</title>
+<meta name="description" content="This page was created to show stuff">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-	<link href="css/hackathon.css" rel="stylesheet"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="css/hackathon.css" rel="stylesheet"/>
+
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 	<script src="javascript/hackathon.js"></script>
+	
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+ 
+    <!-- Morris Charts CSS -->
+    <link href="css/morris.css" rel="stylesheet">
 
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="javascript/raphael.min.js"></script>
+    <script src="javascript/morris.min.js"></script>
+    <script src="javascript/morris-line.js"></script>
 </head>
 
-<body ng-app="aline">
-
-	<header>
+<body ng-app="aline" ng-controller="ownerDashboardCtrl">
+  <header>
 		<aline-header></aline-header>
-	</header>
-
-	
-
-
-
-
-
-
-
-
-
-
-
-	
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3" ng-app="demo">
-					<div class="well">
-						<div ng-controller="Hello">
-							<u><b>AngularJS Web Service Call</b></u>
-							<p><b>The ID is:</b> {{greeting.id}}</p>
-							<p><b>The content is:</b> {{greeting.content}}</p>
-							<a href="https://spring.io/guides/gs/consuming-rest-angularjs/">Example Found Here</a>
-							<br><a href="http://www.nganimate.org/">NG Animate</a>
-							<br><a href="https://angular-ui.github.io/bootstrap/">AngularJS UI</a>
-						</div>					
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="well">
-						<b>Bootstrap Resources</b>
-						<br>
-						<a href="https://startbootstrap.com/">Bootstrap Homepage</a>
-						<br>
-						<a href="https://startangular.com/product/sb-admin-bootstrap-4-angular-4/">Fancy Template</a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="well">
-						<b>HTML5 Storage</b>
-						<br>
-						<a href="https://www.ibm.com/developerworks/community/blogs/bobleah/entry/html5_code_example_store_images_using_localstorage57?lang=en">Image Storage Example</a>
-						<br>
-						<a href="https://www.html5rocks.com/en/tutorials/offline/storage/">In Browser DB's</a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="well font-white">
-						Connect - Simplify - Collaborate
-						<br>
-						<input type="button" onclick="popup()" value="Click Me!">
-					</div>
-				</div>
-			</div>
-		</div>
+  </header>
+  
+<div class="container">
+<div class="row">
+  <div class="col-lg-12">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="col-lg-4" align="center"> <a href="job-search.htm"> <img class="media-object" src="pictures/JobSearch.png" alt="UserPhoto"><h4> </a> </div>
+        <div class="col-lg-4" align="center"> <a href="resource-search.htm"> <img class="media-object" src="pictures/ResourceSearch.png" alt="UserPhoto"> </a> </div>
+        <div class="col-lg-4" align="center"> <a href="team-search.htm"> <img class="media-object" src="pictures/TeamSearch.png" alt="UserPhoto"> </a> </div>
+        <div class="col-lg-12">
+           <hr>
+            <div class="panel panel-gray">
+                 <div class="panel-heading">
+                     <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i><b>Team Engagement</b> - {{teamsByOwner.teams[0].teamName}}</h3>
+                     <hr>
+                 </div>
+                 <div class="panel-body">
+					<div id="morris-line-chart" style="height: 200px;"></div>
+                 </div>
+             </div>
+        </div>
+      </div>
+     <div class="col-lg-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group"> <a href="#" class="list-group-item">Resource 1 Owner Skill Interest</a> <a href="#" class="list-group-item">Resource 2</a> <a href="#" class="list-group-item">Resource 3</a> <a href="#" class="list-group-item">Resource 4</a> <a href="#" class="list-group-item">Resource 5</a> <a href="#" class="list-group-item">Resource 6</a> <a href="#" class="list-group-item">Resource 7</a> <a href="#" class="list-group-item">Resource 8</a> <a href="#" class="list-group-item">Resource 9</a> <a href="#" class="list-group-item">Resource 10</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
 
+<footer class="black white">
+  <div class="container" >
+    <hr>
+    <p><small><a href="http://www.throughthered.com">Like my band</a> On facebook</small></p>
+  </div>
+</footer>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-		
-
-	<footer class="black white">
-		<div class="container" >
-			<hr>
-			<p><small><a href="http://www.throughthered.com">Like my band</a> On facebook</small></p>				
-			</p>
-		</div> <!-- end container -->
-	</footer>
-
-
-
-
-</body>	
+</body>
 </html>

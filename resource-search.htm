@@ -3,13 +3,33 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Hackathon 2017 Project Code Name "Cattle Prod"</title>
+	<title>ALine - Search Resources</title>
 	<meta name="description" content="This page was created to show stuff">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link href="css/hackathon.css" rel="stylesheet"/>
+
+<style>
+
+</style>	
+
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- DataTables -->
+	<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.8.2/jquery.dataTables.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="javascript/hackathon.js"></script>
+
+<!--	
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script src="http://code.angularjs.org/angular-1.0.0rc1.js"></script>	
+-->
+
+
+
 
 </head>
 
@@ -32,55 +52,24 @@
 
 
 	
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3" ng-app="demo">
-					<div class="well">
-						<div ng-controller="Hello">
-							<u><b>AngularJS Web Service Call</b></u>
-							<p><b>The ID is:</b> {{greeting.id}}</p>
-							<p><b>The content is:</b> {{greeting.content}}</p>
-							<a href="https://spring.io/guides/gs/consuming-rest-angularjs/">Example Found Here</a>
-							<br><a href="http://www.nganimate.org/">NG Animate</a>
-							<br><a href="https://angular-ui.github.io/bootstrap/">AngularJS UI</a>
-						</div>					
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="well">
-						<b>Bootstrap Resources</b>
-						<br>
-						<a href="https://startbootstrap.com/">Bootstrap Homepage</a>
-						<br>
-						<a href="https://startangular.com/product/sb-admin-bootstrap-4-angular-4/">Fancy Template</a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="well">
-						<b>HTML5 Storage</b>
-						<br>
-						<a href="https://www.ibm.com/developerworks/community/blogs/bobleah/entry/html5_code_example_store_images_using_localstorage57?lang=en">Image Storage Example</a>
-						<br>
-						<a href="https://www.html5rocks.com/en/tutorials/offline/storage/">In Browser DB's</a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="well font-white">
-						Connect - Simplify - Collaborate
-						<br>
-						<input type="button" onclick="popup()" value="Click Me!">
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="container">
 
+	<div ng-controller="dataTableCtrl" class="well">
+		<table resource-table="overrideOptions" aa-data="sampleResources" ao-column-defs="columnDefs" fn-row-callback="myCallback" class="table">
+			<thead>
+			<tr>
+				<th class = "th" style="width:150px">Name</th>
+				<th class = "th" style="width:250px">Skill Name</th>
+				<th class = "th" style="width:100px">Skill Level</th>
+				<th class = "th" style="width:150px">Interest Name</th>
+				<th class = "th" style="width:250px">Interest Level</th>		
+			</tr>
+			</thead>
+		</table>
+		{{message}}
+	</div>
 
-
-
-
-
-
-
+	</div>
 
 
 
@@ -101,11 +90,7 @@
 		</div> <!-- end container -->
 	</footer>
 
-<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-<script src="javascript/hackathon.js"></script>
-<script></script>
+
 
 
 </body>	
