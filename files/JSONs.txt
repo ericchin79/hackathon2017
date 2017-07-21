@@ -1,6 +1,5 @@
-// Resource URI Params
-
-// Resource JSON response
+// Resource - URI Params
+// Resource - JSON response
 ##missing Owner/PPL
 ##missing BIO
 {
@@ -33,6 +32,9 @@
 
 
 
+get a list of the teams by owner xxx/yyy/1
+
+//Owner Dashboard Page
 // Team JSON
 ##missing history of Health
 {
@@ -40,7 +42,7 @@
 	teamName: string
 	
 	owners [] {
-		ownerId: int
+		ownerId: intb 
 		name: string first+last
 		emailAddress: string
 		type: string
@@ -63,8 +65,17 @@
 		endDate: string (mm/dd/yyyy)
 		}
 	
-	engagementRating: [] array
+	engagementRating: [
+		teamId: 
+		score:
+	] array
 }
+
+
+
+
+
+
 
 // Position JSON
 position[]
@@ -82,6 +93,8 @@ position[]
 	startDate: string (mm/dd/yyyy)
 	endDate: string (mm/dd/yyyy)
 }
+
+
 
 // Owner JSON
 	{
