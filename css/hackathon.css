@@ -1,6 +1,13 @@
 #topbar {
-    background-image: url(../pictures/20170719_194819.jpg);
     background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+#footer {
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1px;
