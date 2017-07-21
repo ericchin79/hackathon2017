@@ -10,22 +10,22 @@ $(function() {
         // the chart.
         data: [{
             Date: '2016-05-10',
-            Rating: 5
+            Rating: 2
         }, {
             Date: '2016-07-04',
-            Rating: 4
+            Rating: 3
         }, {
             Date: '2016-10-19',
-            Rating: 3
+            Rating: 2
         }, {
             Date: '2016-12-04',
-            Rating: 4
-        }, {
-            Date: '2017-01-14',
             Rating: 3
         }, {
+            Date: '2017-01-14',
+            Rating: 4
+        }, {
             Date: '2017-05-20',
-            Rating: 2
+            Rating: 5
         }, ],
         // The name of the data record attribute that contains x-visitss.
         xkey: 'Date',
