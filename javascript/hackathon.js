@@ -36,6 +36,24 @@ function popup() {
     alert("Hello World");
 }
 
+hackApp.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "index.htm"
+    })
+    .when("/ownerDashboard", {
+        templateUrl : "owner-dashboard.htm"
+    })
+    .when("/resourseDashboard", {
+        templateUrl : "resourse-dashboard.htm"
+    })
+    .when("/blue", {
+        templateUrl : "blue.htm"
+    });
+
+
+
+
 //Example of the Object on the Owner Dashboard Page
 let teamsByOwner = {
 
