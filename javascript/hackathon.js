@@ -41,6 +41,19 @@ hackApp.controller("resourceCtrl", function($scope,$http) {
          });
 });
 
+hackApp.controller("teamCtrl", function($scope,$http) {
+     $http.get('http://nwaline.azurewebsites.net/api/teams/getbyid?id=1').
+         then(function(response) {
+             $scope.resource = response.data;
+             $scope.positions = response.data.Positions;
+		 	$scope.engagementHistory = response.data.EngagementHistory
+			$scope.owners = response.data.Owners
+			$scope.workload = response.Workload
+			$scope.teamName = response.data.TeamName
+			
+         });
+});
+
 hackApp.controller("dataTableCtrl", function($scope) {
     $scope.message = '';            
     
