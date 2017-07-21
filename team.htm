@@ -7,10 +7,25 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
 <link href="css/hackathon.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+ 
+    <!-- Morris Charts CSS -->
+    <link href="css/morris.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="javascript/raphael.min.js"></script>
+    <script src="javascript/morris.min.js"></script>
+    <script src="javascript/morris-line.js"></script>
 </head>
 
-<body ng-app="aline">
+<body ng-app="aline" ng-controller="ownerDashboardCtrl">
 <header>
 		<aline-header></aline-header>
   </header>
@@ -21,7 +36,15 @@
       <div class="row">
         <div class="col-lg-7">
           <div class="col-lg-12">
-            <h1>The grid goes here!</h1>
+            <div class="panel panel-gray">
+                 <div class="panel-heading">
+                     <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i><b>Team Engagement</b> - Team Name</h3>
+                     <hr>
+                 </div>
+                 <div class="panel-body">
+					<div id="morris-line-chart" style="height: 200px;"></div>
+                 </div>
+             </div>
           </div>
           <div class="col-lg-12">
             <h2>Project History&nbsp;</h2>
@@ -62,7 +85,11 @@
 			<hr>
 			<p><small><a href="http://www.throughthered.com">Like my band</a> On facebook</small></p>				
 			</p>
-		</div> <!-- end container -->
+		</div>
+		
+		 
+		  
+		    <!-- end container -->
 	</footer>
 
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
