@@ -17,14 +17,18 @@
 	<script></script>
 </head>
 
-<body ng-app="aline">
+<body ng-app="aline" ng-controller="ownerDashboardCtrl">
   <header>
 		<aline-header></aline-header>
   </header>
   
 <div class="container">
 <div class="row">
+	<div class="pull-left"><h2><b>{{owner.name}}</b>&nbsp;-&nbsp;{{owner.type}}</h2></div>
+
+<div class="row">
   <div class="col-lg-12">
+   	<hr>
     <div class="row">
       <div class="col-lg-9">
         <div class="col-lg-4" align="center"> <a href="job-search.htm"> <img class="media-object" src="pictures/JobSearch.png" alt="UserPhoto"> </a> </div>
@@ -34,10 +38,10 @@
           <h1>The grid goes here!</h1>
         </div>
       </div>
-      <div class="col-lg-3 sidebar-offcanvas" id="sidebar" ng-controller="ownerDashboardCtrl">
+      <div class="col-lg-3 sidebar-offcanvas" id="sidebar">
         <div class="list-group"> 
           <a href="#" class="list-group-item active">My Teams</a>
-          <a href="#" class="list-group-item" ng-repeat="team in teamsByOwner.teams" >{{team.teamName}}</a>  
+          <a href="#" class="list-group-item" ng-repeat="team in teamsByOwner.teams">{{team.teamName}}</a>  
          </div>
       </div>
     </div>
