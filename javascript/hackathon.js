@@ -327,10 +327,45 @@ let sampleResources = [
     },
     {
     "Name": "Jordan McMillan",
-    "Skill Name": "Guide Wire",
+    "Skill Name": "Guidewire",
     "Skill Level": 5,
     "Interest Name": "AngularJS",
-    "Interest Level":2
+    "Interest Level":3
+    },
+    {
+    "Name": "Billy Bob",
+    "Skill Name": "AngularJS",
+    "Skill Level": 5,
+    "Interest Name": "Guidewire",
+    "Interest Level":5
+    },
+    {
+    "Name": "Jillian Bendt",
+    "Skill Name": ".net",
+    "Skill Level": 5,
+    "Interest Name": ".net",
+    "Interest Level":5
+    },
+    {
+    "Name": "Ryan Carroll",
+    "Skill Name": "ETL",
+    "Skill Level": 5,
+    "Interest Name": "ETL",
+    "Interest Level":5
+    },
+    {
+    "Name": "Jimmy Boi",
+    "Skill Name": "Angular",
+    "Skill Level": 5,
+    "Interest Name": "Guidewire",
+    "Interest Level":3
+    },
+    {
+    "Name": "Rosie O'onnell",
+    "Skill Name": "Wizardry",
+    "Skill Level": 5,
+    "Interest Name": "Guidewire",
+    "Interest Level":3
     }
 ];
 
