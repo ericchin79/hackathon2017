@@ -11,6 +11,15 @@ hackApp.controller("groceryCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
 });
 
+hackApp.controller("resourceDashboardCtrl", function($scope) {
+    // $http.get('http://rest-service.guides.spring.io/greeting').
+    //     then(function(response) {
+    //         $scope.teamsByOwner = response.data;
+    //         $scope.owner = response.data;
+    //     });
+    $scope.teamsByOwner = teamsByOwner;
+    $scope.owner = mockOwner;
+});
 hackApp.controller("ownerDashboardCtrl", function($scope) {
     // $http.get('http://rest-service.guides.spring.io/greeting').
     //     then(function(response) {
@@ -124,20 +133,20 @@ function popup() {
     alert("Hello World");
 }
 
-hackApp.config(function($routeProvider) {
-    $routeProvider
-    .when("/", {
-        templateUrl : "index.htm"
-    })
-    .when("/ownerDashboard", {
-        templateUrl : "owner-dashboard.htm"
-    })
-    .when("/resourseDashboard", {
-        templateUrl : "resourse-dashboard.htm"
-    })
-    .when("/blue", {
-        templateUrl : "blue.htm"
-    });
+// hackApp.config(function($routeProvider) {
+//     $routeProvider
+//     .when("/", {
+//         templateUrl : "index.htm"
+//     })
+//     .when("/ownerDashboard", {
+//         templateUrl : "owner-dashboard.htm"
+//     })
+//     .when("/resourseDashboard", {
+//         templateUrl : "resourse-dashboard.htm"
+//     })
+//     .when("/blue", {
+//         templateUrl : "blue.htm"
+//     });
 
 
 
