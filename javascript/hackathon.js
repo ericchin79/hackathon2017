@@ -12,7 +12,17 @@ hackApp.controller("groceryCtrl", function($scope) {
 });
 
 hackApp.component('alineHeader', {
-  templateUrl: '../header.htm'
+  templateUrl: '../headerTemplate.html'
+  
+
+});
+
+hackApp.controller('alineHeaderCtrl', function($scope, $http){
+    this.data = {
+        ownerId: 5,
+    
+    }
+
 });
 
 function popup() {
