@@ -52,20 +52,20 @@ hackApp.controller("dataTableCtrl", function($scope) {
 
 });
 
-hackApp.directive('myTable', function() {
+hackApp.directive('resourceTable', function() {
         return function(scope, element, attrs) {
 
             // apply DataTable options, use defaults if none specified by user
             var options = {};
-            if (attrs.myTable.length > 0) {
-                options = scope.$eval(attrs.myTable);
+            if (attrs.resourceTable.length > 0) {
+                options = scope.$eval(attrs.resourceTable);
             } 
             else {
                 options = {
                     "bStateSave": true,
                     "iCookieDuration": 2419200, /* 1 month */
                     "bJQueryUI": true,
-                    "bPaginate": false,
+                    "bPaginate": true,
                     "bLengthChange": false,
                     "bFilter": false,
                     "bInfo": false,
