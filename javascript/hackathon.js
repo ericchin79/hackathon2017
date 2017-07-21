@@ -129,9 +129,7 @@ hackApp.controller('alineHeaderCtrl', function($scope, $http){
 
 });
 
-function popup() {
-    alert("Hello World");
-}
+
 
 // hackApp.config(function($routeProvider) {
 //     $routeProvider
