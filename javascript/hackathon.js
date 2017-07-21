@@ -27,8 +27,7 @@ hackApp.component('alineHeader', {
 
 hackApp.controller('alineHeaderCtrl', function($scope, $http){
     this.data = {
-        ownerId: 5,
-    
+        ownerId: 5
     }
 
 });
